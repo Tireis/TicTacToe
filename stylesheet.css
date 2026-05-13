@@ -1,0 +1,48 @@
+.pageShell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectionDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.indexSection {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+
+}
+
+.gameSelectionBtn {
+    background-color: #3300aa;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 2px;
+}
+
+.btnRows {
+    margin: 2px;
+}
+
+.ingameBtn {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+
+#pageHeader {
+    display: flex;
+    justify-content: center;
+}

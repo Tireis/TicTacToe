@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicTacToe</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <section id="pageHeader">
-        <h1>
-            TicTacToe
-        </h1>
-    </section>
+    <div class="pageShell">
+        <section id="pageHeader">
+            <h1>
+                TicTacToe
+            </h1>
+        </section>
+    
+        <section id="gameSelection" class="indexSection">
+            <h3>Select a game variant to play</h3>
+            <div class="selectionDiv">
+                <button type="submit" class="gameSelectionBtn" onclick="gotoPage('normalGame')">normal game</button>
+                <button type="submit" class="gameSelectionBtn" onclick="gotoPage('hatGame')">hat game</button>
+                <button type="submit" class="gameSelectionBtn" onclick="gotoPage('shiftingRounds')">shifting rounds</button>
+                <button type="submit" class="gameSelectionBtn" onclick="gotoPage('only3')">only 3</button>
+            </div>
+        </section>
+    </div>
 
-    <section id="gameSelection">
-        <h3>Select a game variant to play</h3>
-        <button type="submit">normal game</button>
-        <button type="submit">hat game</button>
-        <button type="submit">shifting rounds</button>
-        <button type="submit">only 3</button>
-    </section>
+    <script>
+        function gotoPage(p) {
+            switch(p){
+                case('normalGame'):
+                    window.location.href = "normal_game.html";
+                    break;
+                case('hatGame'):
+                    window.location.href = "hat_game.html";
+                    break;
+                case('shiftingRounds'):
+                    window.location.href = "shifting_rounds.html";
+                    break;
+                case('only3'):
+                    window.location.href = "only_3.html";
+                    break;
+                default:
+                    window.location.href = "";
+                    break;
+            }
+        }
+    </script>
 </body>
 </html>
